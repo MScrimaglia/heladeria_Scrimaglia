@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
+html {
+    font-family: 'Bitter', serif;
+}
+
+body {
+    margin: 0;
+    background-color: #292929;
+    color: antiquewhite;
+}
+
+header {
+    background-color: #101010;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 30px;
+    }
+
+.navBar {
+    height: 100%;
+    display: flex;
+}
+
+.logo {
+    text-decoration: none;
+    color: rgb(220, 220, 220);
+}
+
+.nav__ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.nav__li {
+    padding: 0 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav__li:hover {
+    background-color: rgb(220, 220, 220);
+    transition: 200ms;
+}
+
+.nav__li:hover > .nav__a{
+    color: #101010;
+    transition: 200ms;
+}
+
+.nav__a {
+    text-decoration: none;
+    color: rgb(220, 220, 220);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 72px;    
+    margin: 0;
+}
+
+.titulo_section {
+    margin-left: 25px;
+}
+
+.main_description {
+    font-size: 38px;
+}
+
+.seemore {
+    font-size: 32px;
+    color: rgb(234, 234, 234);
+    text-decoration: none;
+    border: 3px solid rgb(234, 234, 234);
+    border-radius: 7px;
+}
+
+.seemore:hover {
+    font-size: 32px;
+    color: rgb(39, 39, 39);
+    text-decoration: none;
+    border: 3px solid rgb(234, 234, 234);
+    background-color: rgb(234, 234, 234);
+    transition: 100ms;
+    text-shadow: none;
+}
+
+.presentation {
+    height: 100vh;
+    background-image: url("../assets/img/iceCreamWallpaper2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25%;
+    max-width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.presentation__text {
+    text-align: center;
+    color: rgb(234, 234, 234);
+    margin: 0 200px;
+    text-shadow: 1px 1px 2px #232323;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40%;
+}
+
+.index_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 470px 470px;
+    
+}
+
+.index_subtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#index_subtext1 {
+    background-color: #022934;
+}
+
+#index_subtext2 {
+    background-color: #859a9e;
+}
+
+.subtitle_subtext1 {
+    color: rgb(255, 255, 255);
+    text-shadow: -2px 2px black;
+    font-size: 36px;
+}
+
+.paragraph_subtext1 {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+}
+
+.seemore_subtext1 {
+    color: rgb(236, 236, 236);
+}
+
+.seemore_subtext1:hover {
+    color: rgb(215, 215, 215);
+}
+
+.subtitle_subtext2 {
+    color: black;
+    font-size: 36px;
+}
+
+.paragraph_subtext2 {
+    color: black;
+    font-size: 28px;
+}
+
+.seemore_subtext2 {
+    color: rgb(60, 60, 60);
+}
+
+.seemore_subtext2:hover {
+    color: black;
+}
+
+.index_image_cell {
+    background-size: cover;
+}
+
+#index_image_cell1 {
+    background-image: url(../assets/img/iceCreamFlavors.jpg);
+}
+
+#index_image_cell2 {
+    background-image: url(../assets/img/iceCreamStore.jpg);
+}
+
+.index_image {
+    height: auto;
+    width: 100vh;
+}
+
+.footer {
+    height: 130px;
+    background-color: #101010;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+    color: rgb(220, 220, 220);
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.h5_contacto {
+    margin-bottom: 10px;
+}
+
+.boton_contacto {
+    font-size: 17px;
+    color: rgb(124, 124, 124);
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.boton_contacto:hover {
+    color: rgb(220, 220, 220);
+}
+
+.icono_redes {
+    width: 40px;
+    padding-right: 10px;
+}
+
+.icono_redes:hover {
+    transform: scale(1.02);
+    transition: 100ms;
+}
+
+.index_section {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -4px;
+}
+
+#index_section1 {
+    background-color: #A9BCD0;
+    padding-right: 250px;
+}
+
+#index_section2 {
+    background-color: #58A4B0;
+    padding-left: 250px;
+}
+
+.sabores_container {
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.sabores_subcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transition: 500ms;
+}
+
+.sabores_subcontainer:hover {
+    width: 105%;
+    transition: 500ms;
+}
+
+.lista_sabores {
+    background-color: rgba(0, 0, 0, 0.348);
+    color: rgb(225, 224, 224);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+}
+
+.lista_sabores:hover {
+    background-color: rgba(0, 0, 0, 0.623);
+    color: rgb(243, 243, 243);
+    transition: 500ms;
+}
+
+#sabores_cremas {
+    background-image: url(../assets/img/saboresCremaComp.jpg);
+    background-size: cover;
+    background-position: -80px 0;
+    background-repeat: no-repeat;
+}
+
+#sabores_chocolates {
+    background-image: url(../assets/img/saboresChocolateComp.jpg);
+    background-size: cover;
+    background-position: -70px 0;
+    background-repeat: no-repeat;
+}
+
+#sabores_dulceleche {
+    background-image: url(../assets/img/saboresDulcelecheComp.jpg);
+    background-size: cover;
+    background-position: -400px 0;
+    background-repeat: no-repeat;
+}
+
+#sabores_frutales {
+    background-image: url(../assets/img/saboresFrutalesComp.jpg);
+    background-size: cover;
+    background-position: -60px 0;
+    background-repeat: no-repeat;
+}
+
+.contacto_container {
+    display: flex;
+    justify-content: center;
+    background-image: url(../assets/img/blurBackground.jpg);
+    background-size: cover;
+}
+
+.form_section {
+    display: flex;
+    width: 60%;
+    margin: 50px;
+    box-shadow: -1px -1px 25px rgb(0, 0, 0);
+}
+
+.form_text_input {
+    width: 100%;
+    margin: 10px 0;
+    resize: none;
+    background-color: #101010;
+    padding: 5px 0;
+    border: 1px solid #101010;
+    border-bottom: 1px solid rgb(244, 244, 244);
+    color: rgb(244, 244, 244);
+}
+
+.contacto_form_container {
+    padding: 15px;
+    padding-bottom: 25px;
+    background-color: #101010;
+    color: rgb(244, 244, 244);
+    width: 50%;
+}
+
+.contacto_form {
+    padding: 0 35px;
+}
+
+.contacto_foto {
+    width: 50%;
+    background-image: url(../assets/img/conctactImage.jpg);
+    background-size: cover;
+    background-repeat: no;
+}
+
+.submit_button {
+    background-color: #101010;
+    color: rgb(216, 206, 193);
+    border: 1px solid rgb(216, 206, 193);
+    padding: 5px 15px;
+    height: 30px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.submit_button:hover {
+    background-color: rgb(216, 206, 193);
+    color: #101010;
+    transition: 100ms;
+}
+
+.container_postres {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 300px 300px;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.producto {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.nombre_producto {
+    padding: 10px 25px;
+    color: rgb(246, 246, 246);
+    background: rgb(10,10,10);
+    background: linear-gradient(90deg, rgba(10,10,10,0) 0%, rgba(0,0,0,0.7318277652858018) 50%, rgba(0,0,0,0.9475140397956058) 100%);
+    margin: 0;
+}
+
+.producto_titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.producto_titulo h2{
+    border-bottom: 1px solid white;
+    padding: 0 50px 10px 50px;
+}
+
+#postre1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url(../assets/img/productoTorta.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px;
+}
+
+#postre2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url(../assets/img/productoCookies.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px ;
+}
+
+#postre3 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: url(../assets/img/productoMedialunas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px;
+}
+
+.blur {
+    height: 100%;
+    width: 100%;
+    background-color: #10101030;
+    transition: 500ms;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.blur:hover {
+    background-color: #00000000;
+    transition: 500ms;
+}
+
+.container_cafe {
+    display: grid;
+    grid-template-columns: 3fr 2fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    height: 600px;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+#cafe1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: url(../assets/img/cafeteriaTe.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+}
+
+#cafe2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: url(../assets/img/cafeteriaSubmarino.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cafe3 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-image: url(../assets/img/cafeteriaFrappuccino.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+}
+
+#cafe4 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-image: url(../assets/img/cafeteriaCafe.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -300px;
+}
+
+.local_container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 300px);
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.local_descripcion {
+    background-color: #8d7404;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.local_descripcion h2{
+    font-size: 32px;
+}
+
+.local_descripcion p{
+    font-size: 24px;
+}
+
+.local_imagen {
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+
+#local_imagen1{
+    background-image: url(../assets/img/local2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#local_imagen2{
+    background-image: url(../assets/img/local1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.local_mapa {
+    background-color: #8d7404;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+@media (max-width: 800px) {
+
+    .local_descripcion {
+        background-color: #8d7404;
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    
+    .local_imagen {
+        grid-row: 2/3;
+        grid-column: 1/3;
+    }
+    
+    .local_mapa {
+        background-color: #8d7404;
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+
+    .titulo_section{
+        text-align: center;
+    }
+}
