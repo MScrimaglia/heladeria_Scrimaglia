@@ -6,8 +6,8 @@ html {
 
 body {
     margin: 0;
-    /* color antiguo: background-color: #292929;*/
-    background-color: #06070d;
+    /* color antiguo: background-color: #06070d;*/
+    background-color: #1f212c;
     color: antiquewhite;
 }
 
@@ -76,7 +76,6 @@ header {
 
 .titulo_section {
     padding: 15px 25px 15px 25px;
-    margin-bottom: 20px;
     background-color: #1f212c;
 }
 
@@ -191,8 +190,8 @@ header {
 
 .footer {
     height: 130px;
-    /* color antiguo: background-color: #101010;*/
-    background-color: #1f212c;
+    /* color antiguo: background-color: #1f212c;*/
+    background-color: #06070d;
     display: flex;
     justify-content: space-between;
     padding: 0 30px;
@@ -393,7 +392,7 @@ header {
 .nombre_producto {
     padding: 10px 25px;
     color: rgb(246, 246, 246);
-    background: rgb(10,10,10);
+    background: #06070d;
     background: linear-gradient(90deg, rgba(10,10,10,0) 0%, rgba(0,0,0,0.7318277652858018) 50%, rgba(0,0,0,0.9475140397956058) 100%);
     margin: 0;
     font-size: 22px;
