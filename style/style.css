@@ -6,12 +6,14 @@ html {
 
 body {
     margin: 0;
-    background-color: #292929;
+    /* color antiguo: background-color: #292929;*/
+    background-color: #06070d;
     color: antiquewhite;
 }
 
 header {
-    background-color: #101010;
+    /* color antiguo: background-color: #101010;*/
+    background-color: #06070d;
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -25,6 +27,11 @@ header {
 }
 
 .logo {
+    text-decoration: none;
+    color: rgb(220, 220, 220);
+}
+
+.logo:hover {
     text-decoration: none;
     color: rgb(220, 220, 220);
 }
@@ -48,7 +55,8 @@ header {
 }
 
 .nav__li:hover > .nav__a{
-    color: #101010;
+    color: #06070d;
+    text-decoration: none;
     transition: 200ms;
 }
 
@@ -67,7 +75,14 @@ header {
 }
 
 .titulo_section {
-    margin-left: 25px;
+    padding: 15px 25px 15px 25px;
+    margin-bottom: 20px;
+    background-color: #2425288a;
+}
+
+.titulo_contacto {
+    padding: 15px 25px 15px 25px;
+    margin-bottom: 20px;
 }
 
 .main_description {
@@ -130,48 +145,31 @@ header {
 }
 
 #index_subtext1 {
-    background-color: #022934;
+    background-color: #051116;
+    background-image: linear-gradient(to top, #051116, #18262b, #173947);
 }
 
 #index_subtext2 {
-    background-color: #859a9e;
+    background-color: #051116;
+    background-image: linear-gradient(to bottom, #051116, #18262b, #173947);
 }
 
-.subtitle_subtext1 {
+.subtitle_subtext {
     color: rgb(255, 255, 255);
-    text-shadow: -2px 2px black;
     font-size: 36px;
 }
 
-.paragraph_subtext1 {
+.paragraph_subtext {
     color: rgb(255, 255, 255);
     font-size: 28px;
 }
 
-.seemore_subtext1 {
-    color: rgb(236, 236, 236);
+.seemore_subtext {
+    color: rgb(166, 166, 166);
 }
 
-.seemore_subtext1:hover {
+.seemore_subtext:hover {
     color: rgb(215, 215, 215);
-}
-
-.subtitle_subtext2 {
-    color: black;
-    font-size: 36px;
-}
-
-.paragraph_subtext2 {
-    color: black;
-    font-size: 28px;
-}
-
-.seemore_subtext2 {
-    color: rgb(60, 60, 60);
-}
-
-.seemore_subtext2:hover {
-    color: black;
 }
 
 .index_image_cell {
@@ -193,7 +191,8 @@ header {
 
 .footer {
     height: 130px;
-    background-color: #101010;
+    /* color antiguo: background-color: #101010;*/
+    background-color: #1f212c;
     display: flex;
     justify-content: space-between;
     padding: 0 30px;
@@ -358,6 +357,7 @@ header {
     background-image: url(../assets/img/conctactImage.jpg);
     background-size: cover;
     background-repeat: no;
+    background-position: -50px;
 }
 
 .submit_button {
@@ -396,6 +396,7 @@ header {
     background: rgb(10,10,10);
     background: linear-gradient(90deg, rgba(10,10,10,0) 0%, rgba(0,0,0,0.7318277652858018) 50%, rgba(0,0,0,0.9475140397956058) 100%);
     margin: 0;
+    font-size: 22px;
 }
 
 .producto_titulo{
@@ -499,7 +500,7 @@ header {
     background-image: url(../assets/img/cafeteriaCafe.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: -300px;
+    background-position: -260px;
 }
 
 .local_container {
