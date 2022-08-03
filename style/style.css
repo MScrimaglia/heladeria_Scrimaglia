@@ -77,7 +77,7 @@ header {
 .titulo_section {
     padding: 15px 25px 15px 25px;
     margin-bottom: 20px;
-    background-color: #2425288a;
+    background-color: #1f212c;
 }
 
 .titulo_contacto {
@@ -325,7 +325,7 @@ header {
 
 .form_section {
     display: flex;
-    width: 60%;
+    width: 900px;
     margin: 50px;
     box-shadow: -1px -1px 25px rgb(0, 0, 0);
 }
@@ -358,7 +358,6 @@ header {
     background-image: url(../assets/img/conctactImage.jpg);
     background-size: cover;
     background-repeat: no;
-    background-position: -50px;
 }
 
 .submit_button {
@@ -576,9 +575,6 @@ header {
     .titulo_section{
         text-align: center;
     }
-}
-
-@media (max-width: 850px) {
 
     .contacto_foto{
         display: none;
