@@ -206,8 +206,9 @@ header {
     align-items: flex-end;
 }
 
-.h5_contacto {
-    margin-bottom: 10px;
+.h5_footer {
+    font-size: 18px;
+    margin: 20px 0;
 }
 
 .boton_contacto {
@@ -553,7 +554,7 @@ header {
     grid-column: 2/3;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
 
     .local_descripcion {
         background-color: #8d7404;
@@ -574,5 +575,20 @@ header {
 
     .titulo_section{
         text-align: center;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .contacto_foto{
+        display: none;
+    }
+
+    .form_section{
+        width: 100%;
+    }
+
+    .contacto_form_container{
+        width: 100%;
     }
 }
