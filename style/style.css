@@ -6,13 +6,11 @@ html {
 
 body {
     margin: 0;
-    /* color antiguo: background-color: #06070d;*/
     background-color: #1f212c;
     color: antiquewhite;
 }
 
 header {
-    /* color antiguo: background-color: #101010;*/
     background-color: #06070d;
     height: 60px;
     display: flex;
@@ -113,9 +111,11 @@ header {
     background-size: cover;
     background-position: 25%;
     max-width: 100%;
+    min-height: 500px;
     display: flex;
     justify-content: right;
     align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
 }
 
 .presentation__text {
@@ -190,7 +190,6 @@ header {
 
 .footer {
     height: 130px;
-    /* color antiguo: background-color: #1f212c;*/
     background-color: #06070d;
     display: flex;
     justify-content: space-between;
@@ -592,5 +591,17 @@ header {
 
     .contacto_form_container{
         width: 100%;
+    }
+
+    .presentation{
+        justify-content: center;
+    }
+
+    .seemore{
+        width: 70vh;
+    }
+
+    .main_description{
+        width: 70vh;
     }
 }
