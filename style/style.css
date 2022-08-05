@@ -604,4 +604,17 @@ header {
     .main_description{
         width: 70vh;
     }
+
+    .subtitle_subtext {
+
+        font-size: 4vw;
+    }
+    
+    .paragraph_subtext {
+        font-size: 3vw;
+    }
+    
+    .seemore_subtext {
+        font-size: 2vw;
+    }
 }
