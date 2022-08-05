@@ -175,14 +175,6 @@ header {
     background-size: cover;
 }
 
-#index_image_cell1 {
-    background-image: url(../assets/img/iceCreamFlavors.jpg);
-}
-
-#index_image_cell2 {
-    background-image: url(../assets/img/iceCreamStore.jpg);
-}
-
 .index_image {
     height: auto;
     width: 100vh;
