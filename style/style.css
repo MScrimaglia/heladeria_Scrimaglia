@@ -2,6 +2,7 @@
 
 html {
     font-family: 'Bitter', serif;
+    scroll-behavior: smooth;
 }
 
 body {
