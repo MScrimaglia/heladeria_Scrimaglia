@@ -528,6 +528,13 @@ header {
     font-size: 2vw;
 }
 
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: #000000b0;
+    height: 15%;
+    border-radius: 12px;
+    width: 30%;
+}
+
 
 @media (max-width: 768px) {
     
