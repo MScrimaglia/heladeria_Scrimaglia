@@ -564,9 +564,6 @@ body {
 
 .navbar-nav {
     background-color: #06070d;
-    position: absolute;
-    width: 100%;
-    z-index: 1;
 }
 
 .navbar-toggler {
@@ -645,5 +642,12 @@ body {
 
     .footer {
         padding: 0 3px;
+    }
+
+    .navbar-nav {
+        background-color: #06070d;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
     }
 }
