@@ -570,6 +570,13 @@ body {
     margin-right: 15px;
 }
 
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    height: 20%;
+    width: 25%;
+    border-radius: 15px;
+    background-color: #000000af;
+}
+
 @media (max-width: 768px) {
 
     .local_descripcion {
