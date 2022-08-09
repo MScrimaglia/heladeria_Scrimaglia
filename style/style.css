@@ -11,26 +11,12 @@ body {
     color: antiquewhite;
 }
 
-header {
-    background-color: #06070d;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:  0 30px;
-    }
-
 .navBar {
     height: 100%;
     display: flex;
 }
 
 .logo {
-    text-decoration: none;
-    color: rgb(220, 220, 220);
-}
-
-.logo:hover {
     text-decoration: none;
     color: rgb(220, 220, 220);
 }
@@ -54,6 +40,12 @@ header {
 }
 
 .nav__li:hover > .nav__a{
+    color: #06070d;
+    text-decoration: none;
+    transition: 200ms;
+}
+
+.nav-item:hover {
     color: #06070d;
     text-decoration: none;
     transition: 200ms;
@@ -545,10 +537,31 @@ header {
     background-repeat: no-repeat;
 }
 
-.local_mapa {
-    background-color: #8d7404;
-    grid-row: 2/3;
-    grid-column: 2/3;
+.navbar-collapse, .navbar {
+    height: 60px;
+}
+
+.navbar .container-fluid {
+    background-color: #06070d;
+}
+
+.nav-item {
+    color: rgb(220, 220, 220);
+    height: 50px;
+}
+
+.navbar-brand {
+    color: rgb(220, 220, 220);
+    font-size: 28px;
+    margin-left: 30px;
+}
+
+.navbar-nav {
+    background-color: #06070d;
+}
+
+.navbar-toggler {
+    margin-right: 15px;
 }
 
 @media (max-width: 768px) {
@@ -591,15 +604,15 @@ header {
     }
 
     .seemore{
-        width: 70vh;
+        width: 70vw;
     }
 
     .main_description{
-        width: 70vh;
+        width: 70vw;
+        font-size: 7vw;
     }
 
     .subtitle_subtext {
-
         font-size: 4vw;
     }
     
@@ -609,5 +622,17 @@ header {
     
     .seemore_subtext {
         font-size: 2vw;
+    }
+
+    .navbar-brand {
+        margin-left: 15px;
+    }
+    
+    .navbar-toggler {
+        margin-right: 15px;
+    }
+
+    .presentation__text {
+        margin: 0;
     }
 }
