@@ -243,6 +243,9 @@ body {
     display: flex;
     justify-content: space-around;
     height: 100vh;
+    min-height: 700px;
+    width: 100%;
+    margin: 0;
 }
 
 .sabores_subcontainer {
@@ -561,5 +564,26 @@ body {
         position: absolute;
         width: 100%;
         z-index: 1;
+    }
+
+    #sabores_cremas {
+        background-position: 0;
+    }
+    
+    #sabores_chocolates {
+        background-position: 0;
+    }
+    
+    #sabores_dulceleche {
+        background-position: -100px 0;
+    }
+    
+    #sabores_frutales {
+        background-position: 0;
+    }
+
+    .lista_sabores {
+        background-color: rgba(0, 0, 0, 0.623);
+        color: rgb(243, 243, 243);
     }
 }
