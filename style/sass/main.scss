@@ -2,6 +2,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
 
+//Maps
+
+$subtext_font_size: (
+    subtitle: 36px,
+    paragraph: 28px,
+    seemore:auto
+);
+
+//Mixins
+
+@mixin size($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+//Css
+
 html {
     font-family: 'Bitter', serif;
     scroll-behavior: smooth;
@@ -55,10 +72,9 @@ body {
 .nav__a {
     text-decoration: none;
     color: rgb(220, 220, 220);
-    height: 100%;
-    width: 100%;
     display: flex;
     align-items: center;
+    @include size(100%,100%);
 }
 
 .title {
@@ -148,16 +164,17 @@ body {
 
 .subtitle_subtext {
     color: rgb(255, 255, 255);
-    font-size: 36px;
+    font-size: map-get($map: $subtext-font-size, $key:subtitle );
 }
 
 .paragraph_subtext {
     color: rgb(255, 255, 255);
-    font-size: 28px;
+    font-size: map-get($map: $subtext-font-size, $key:paragraph );
 }
 
 .seemore_subtext {
     color: rgb(166, 166, 166);
+    font-size: map-get($map: $subtext-font-size, $key:seemore );
 }
 
 .seemore_subtext:hover {
@@ -169,8 +186,7 @@ body {
 }
 
 .index_image {
-    height: auto;
-    width: 100vh;
+    @include size(auto,100vh);
 }
 
 .footer {
@@ -265,8 +281,7 @@ body {
 .lista_sabores {
     background-color: rgba(0, 0, 0, 0.348);
     color: rgb(225, 224, 224);
-    height: 100%;
-    width: 100%;
+    @include size(100%,100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -402,14 +417,12 @@ body {
 }
 
 .product_image {
-    width: 100%;
-    height: 100%;
+    @include size(100%,100%);
     object-fit: cover;
 }
 
 .blur {
-    height: 100%;
-    width: 100%;
+    @include size(100%,100%);
     background-color: #10101030;
     transition: 500ms;
     display: flex;
@@ -479,11 +492,12 @@ body {
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon{
-    height: 20%;
-    width: 25%;
+    @include size(20%,25%);
     border-radius: 15px;
     background-color: #000000af;
 }
+
+//Media queries
 
 @media (max-width: 768px) {
 
