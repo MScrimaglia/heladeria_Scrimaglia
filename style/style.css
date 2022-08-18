@@ -5,6 +5,11 @@ body {
 .titulo_section {
   background-color: #1f212c; }
 
+.flex_center, .index_subtext, .sabores_subcontainer, .lista_sabores, .local_descripcion {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 html {
   font-family: 'Bitter', serif;
   scroll-behavior: smooth; }
@@ -113,10 +118,7 @@ body {
   grid-template-rows: 470px 470px; }
 
 .index_subtext {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  flex-direction: column; }
 
 #index_subtext1 {
   background-color: #051116;
@@ -212,10 +214,7 @@ body {
   margin: 0; }
 
 .sabores_subcontainer {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   transition: 500ms; }
 
@@ -228,10 +227,7 @@ body {
   color: #e1e0e0;
   height: 100%;
   width: 100%;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   transition: 500ms; }
 
 .lista_sabores:hover {
@@ -363,10 +359,7 @@ body {
 
 .local_descripcion {
   background-color: #8d7404;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center; }
 
 .local_descripcion h2 {

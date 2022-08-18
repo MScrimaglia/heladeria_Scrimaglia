@@ -17,6 +17,14 @@ $subtext_font_size: (
     width: $width;
 }
 
+//Extend placeholder
+
+.flex_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 //Css
 
 html {
@@ -146,10 +154,8 @@ body {
 }
 
 .index_subtext {
-    display: flex;
+    @extend .flex_center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 #index_subtext1 {
@@ -265,10 +271,8 @@ body {
 }
 
 .sabores_subcontainer {
-    display: flex;
+    @extend .flex_center;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     transition: 500ms;
 }
@@ -282,10 +286,8 @@ body {
     background-color: rgba(0, 0, 0, 0.348);
     color: rgb(225, 224, 224);
     @include size(100%,100%);
-    display: flex;
+    @extend .flex_center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     transition: 500ms;
 }
 
@@ -437,10 +439,8 @@ body {
 
 .local_descripcion {
     background-color: #8d7404;
-    display: flex;
+    @extend .flex_center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
