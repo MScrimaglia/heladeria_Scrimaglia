@@ -251,6 +251,40 @@ body {
     margin-bottom: -4px;
 }
 
+.index_flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    padding: 5vw 0;
+}
+
+.index_card {
+    background-color: $background_dark;
+    padding: 5vw;
+    border-radius: 5%;
+    margin: 0 10px;
+}
+
+#index_card1 {
+    background-image: url(../assets/img/iceCreamFlavors.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
+}
+
+#index_card2 {
+    background-image: url(../assets/img/iceCreamStore.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
+    background-position: -5px;
+    background-repeat: no-repeat;
+}
+
+#index_card3 {
+    background-image: url(../assets/img/productoMedialunasEdit.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
+    background-position: -20px;
+    background-repeat: no-repeat;
+}
+
 #index_section1 {
     background-color: #A9BCD0;
     padding-right: 250px;
@@ -599,5 +633,23 @@ body {
     .lista_sabores {
         background-color: rgba(0, 0, 0, 0.623);
         color: rgb(243, 243, 243);
+    }
+
+    .index_flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: auto;
+    }
+
+    .index_card {
+        margin: 15px 5px;
+        height: 30vh;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
