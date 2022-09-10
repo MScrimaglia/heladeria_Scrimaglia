@@ -110,7 +110,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   height: 40%; }
+  .presentation__text .seemore {
+    width: 100%; }
 
 .index_grid {
   display: grid;
@@ -502,4 +505,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; } }
+    align-items: center; }
+  .presentation__text .seemore {
+    width: 60%; } }
